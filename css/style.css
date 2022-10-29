@@ -1,0 +1,916 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 5000px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* -------------- Start Header --------------- */
+
+.header {
+    background-color: rgb(79, 78, 78);
+    width: 100%;
+    height: 60px;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.img1 {
+    height: 60px;
+    width: 70px;
+    float: left;
+    margin-left: 100px;
+}
+
+.ul1 {
+    list-style: none;
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.ul1 li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.header .ul1 a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.header .ul1 a:hover {
+    color: red;
+    border-bottom: 4px solid blue;
+    padding-bottom: 5px;
+}
+
+.header .ul1 .li1 {
+    border-bottom: 4px solid blue;
+    padding-bottom: 5px;
+}
+
+.h2-1 {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 50px;
+}
+
+.p1 {
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    margin: auto;
+    margin-top: -30px;
+}
+
+/* -------------- End Header --------------- */
+
+/* -------------- Start Welcome --------------- */
+
+.welcome {
+    background-image: url("../images/ddd.jpg");
+    height: 100vh;
+    position: relative;
+}
+
+.welcome .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.welcome .content {
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -40px;
+}
+
+.h1-welcome {
+    color: #fff;
+    font-size: 55px;
+}
+
+.p-welcome {
+    color: #fff;
+    margin-top: 10px ;
+    margin-bottom: 15px;
+}
+.btn1-welcome , .btn2-welcome {
+    width: 150px;
+    padding: 15px  0px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.btn2-welcome {
+    background-color: blue;
+    color:#fff;
+    margin-left: 8px ;
+}
+
+.btn1-welcome:hover {
+    opacity: 0.5;
+}
+.btn2-welcome:hover {
+    opacity: 0.5;
+}
+
+/* -------------- End Welcome --------------- */
+
+/* -------------- Start Parent --------------- */
+
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+.line {
+    background-color: blue;
+    width: 80px;
+    height: 4px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.parent {
+    margin-top: 100px;
+    overflow: auto;
+}
+
+.parent-div1 {
+    width: 300px;
+    height: 250px;
+    border: 1px solid gray;
+    text-align: center;
+    margin-left: 150px;
+    float: left;
+    position: relative;
+}
+
+.parent-div1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(121, 113, 113);
+    transition: 1s;
+}
+
+.parent-div1:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.parent-title1 {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.parent-div1:hover .parent-title1 {
+    color: red;
+}
+
+.parent-a1 {
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+}
+
+.parent-div1:hover .parent-a1 {
+    color: red;
+}
+
+.parent-p1 {
+    text-align: center;
+    padding: 0 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.parent-div1:hover .parent-p1 {
+    color: red;
+}
+
+.parent-btn1 {
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(77, 77, 176);
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    color: white;
+}
+
+.parent-div1:hover .parent-btn1 {
+    background-color: blue;
+}
+
+/* ------------------- End Parent ------------------- */
+
+/* ------------------ Start Featured Works ------------------ */
+
+.featured_works {
+    height: 1300px;
+    background-color: grey;
+    margin-top: 100px;
+}
+
+.featured_works .featured_works-p {
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.featured_works .divs {
+    padding-top: 100px;
+    overflow: auto;
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+.featured_works .divs .featured-div1 {
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/yyy.jpg");
+    background-size: cover;
+    position: relative;
+    float: left;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.featured_works .divs .featured-div1:hover {
+    background-color: cadetblue;
+    opacity: 0.5;
+    transition: 1s;
+    outline: solid 10px rgb(0, 247, 255);
+}
+
+
+.featured_works .divs .featured-div1 .featured-div1-h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+
+.featured_works .divs .featured-div1:hover .featured-div1-h2 {
+    visibility: visible;
+    color: blue;
+}
+
+.featured_works .divs .featured-div1 .featured-div1-p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.featured_works .divs .featured-div1:hover .featured-div1-p {
+    visibility: visible;
+    color: white;
+}
+
+.featured_works .divs .featured-div1 .all {
+    overflow: auto;
+    visibility: hidden;
+    margin-top: 20px;
+}
+
+.featured_works .divs .featured-div1:hover .all {
+    visibility: visible;
+}
+
+
+.featured_works .divs .featured-div1 .all .div1 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin-left: 130px;
+    float: left;
+    text-align: center;
+}
+
+.featured_works .divs .featured-div1 .all .div2 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin-left: 20px;
+    float: left;
+    text-align: center;
+}
+
+.featured_works .divs .featured-div1 .all i {
+    font-size: 30px;
+    padding-top: 10px;
+    color: white;
+}
+
+/* ------------------ End Featured Works ------------------ */
+
+/* ------------------ Start What We Offer ------------------ */
+
+.what_We_offer {
+    overflow: auto;
+    padding-top: 100px;
+}
+
+.what_We_offer .p1 {
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+/* /////////////////////////////////////// */
+
+.what_We_offer .div1 {
+    width: 350px;
+    height: 170px;
+    border: 2px solid grey;
+    padding: 30px 10px 0 10px;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.what_We_offer .div1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 1;
+    transition: 1s;
+}
+
+.what_We_offer .div1:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.what_We_offer i {
+    color: blue;
+    font-size: 30px;
+}
+
+.what_We_offer .h2-div1 {
+    display: inline;
+    padding-left: 8px;
+    font-size: 30px;
+}
+
+.what_We_offer .div1:hover .h2-div1 {
+    color: red;
+}
+
+.what_We_offer .p-div1 {
+    padding-left: 45px;
+    padding-top: 20px;
+    color: rgb(126, 94, 94);
+    font-size: 20px;
+}
+
+/* ------------------ End What We Offer ------------------ */
+
+/* ------------------ Start Why Choose Us ------------------ */
+
+.why_choose_us {
+    overflow: auto;
+    padding-top: 100px;
+    background-color: rgb(185, 182, 182);
+    margin-top: 50px;
+}
+
+.why_choose_us-p1 {
+    width: 60px;
+    height: 4px;
+    background-color: blue;
+    margin-top: 10px;
+}
+
+.why_choose_us-div1 {
+    margin-left: 100px;
+    display: inline;
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+}
+
+.why_choose_us-div1 h2 {
+    font-size: 40px;
+}
+
+.why_choose_us-div1 .why_choose_us-p2 {
+    font-size: 20px;
+    padding-right: 170px;
+    margin: 30px 0;
+    color: rgb(121, 116, 116);
+}
+
+.ul2 {
+    list-style: none;
+    color: rgb(121, 116, 116);
+    font-size: 20px;
+}
+
+.why_choose_us-div2 {
+    margin-right: 100px;
+    display: inline;
+    width: 50%;
+    padding-left: 50px;
+}
+
+.why_choose_us-div2 img {
+    width: 300px;
+}
+
+.why_choose_us-div2 .circles {
+    margin-right: 365px;
+    padding-top: 20px;
+}
+
+.why_choose_us-div2 .circles .c1,
+.why_choose_us-div2 .circles .c2,
+.why_choose_us-div2 .circles .c3 {
+    float: right;
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.why_choose_us-div2 .circles .c3 {
+    background-color: blue;
+}
+
+.why_choose_us-div2 .circles .c1:hover,
+.why_choose_us-div2 .circles .c2:hover {
+    background-color: blue;
+}
+
+/* ------------------ End Why Choose Us ------------------ */
+
+/* ------------------- Start Section 1 ------------------*/
+
+.section-1 {
+    height: 350px;
+    margin-top: 150px;
+    background-image: url("../images/eee.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.section-1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0 , 0.7 );
+}
+
+.section-1-content {
+    overflow: auto;
+    margin-top: 150px;
+}
+
+.item1 , .item2 , .item3 , .item4 {
+    float: left;
+    margin-left: 200px;
+    text-align: center;
+}
+
+.section-1-content i {
+    font-size: 30px;
+    color: blue;
+}
+
+.section-1-content h2 {
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.section-1-content p {
+    margin-top: 0;
+    font-size: 20px;
+    color: white;
+}
+
+/* ------------------- End Section 1 ------------------*/
+
+/* ------------------- Start Pricing Table ------------------*/
+
+.pricing_table {
+    margin-top: 100px;
+    overflow: auto;
+}
+
+.pricing_table .pricing_table-p {
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.pricing_table .div1 {
+    border: 2px solid rgb(163, 157, 157);
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 100px;
+}
+
+.pricing_table .div1::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    opacity: 1;
+    transition: 2s;
+}
+
+.pricing_table .div1:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.pricing_table .h3-div1 {
+    color: rgb(163, 157, 157);
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.pricing_table .div1:hover .h3-div1 {
+    color: red;
+}
+
+.pricing_table .div1-div1 {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border: 3px solid blue;
+    border-radius: 50%;
+    overflow: auto;
+}
+
+.pricing_table .div1-div1 .p-div1-div1 {
+    margin-top: 10px;
+}
+
+.pricing_table .div1-div1 .p-div1-div1 .span-div1-div1 {
+    font-size: 40px;
+}
+
+.pricing_table .div1:hover .div1-div1 .p-div1-div1 {
+    color: red;   
+}
+
+.pricing_table .div1:hover .div1-div1 .p-div1-div1 .span-div1-div1 {
+    color: red;   
+}
+
+.pricing_table .p-div1 {
+    color: rgb(163, 157, 157);
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pricing_table .div1:hover .p-div1 {
+    color: red;
+}
+
+.pricing_table .div1 .btn-div1 {
+    border: 3px solid blue;
+    width: 150px;
+    height: 30px;
+}
+
+/* ------------------ End Pricing Table ------------------ */
+
+/* ------------------- Start Section 2 ------------------*/
+
+.section-2 {
+    height: 400px;
+    margin-top: 150px;
+    background-image: url("../images/zzz.png");
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.section-2 .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(73, 73, 73, 0.7);
+}
+
+.part1 , .part2 {
+    float: left;
+    width: 500px;
+    margin-left: 30px;
+    padding-top: 120px;
+}
+
+.part1 {
+    margin-left: 300px;
+}
+
+.part1 img , .part2 img {
+    width: 100px;
+    height: 100%;
+    border-radius: 50%;
+    float: left;
+}
+
+.part1 h2 , .part2 h2 {
+    display: inline;
+    float: left;
+    padding-left: 10px;
+    color: white;
+}
+
+.part1 h2 span , .part2 h2 span {
+    color: rgb(116, 116, 239);
+    font-size: 20px;
+}
+
+.part1 p , .part2 p {
+    float: left;
+    color: white;
+}
+
+/* ------------------- End Section 2 ------------------*/
+
+/* ------------------ Start Our Team ------------------ */
+
+.our-team {
+    margin-top: 100px;
+}
+
+.our-team h2 {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 50px;
+}
+
+.our-team .p-top {
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.our-team .divs {
+    padding-top: 70px;
+    overflow: auto;
+}
+
+/* ///////////////////////////////////////// */
+
+.our-team .div1 {
+    width: 300px;
+    height: 270px;
+    background-color: grey;
+    padding-top: 20px;
+    margin-left: 170px;
+    float: left;
+    position: relative;
+}
+
+.our-team .div1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    background-color: rgb(159, 88, 88);
+    transition: 1s;    
+}
+
+.our-team .div1:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.our-team .div1 .div1-1 {
+    width: 250px;
+    height: 200px;
+    background-image: url("../images/yyy.jpg");
+    background-size: cover;
+    margin: auto;
+}
+
+.our-team .divs .div1 .h3-div1,
+.our-team .divs .div1 .p-div1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.our-team .divs .div1 .p-div1 {
+    color: rgb(96, 94, 94);
+}
+
+.our-team .divs .div1:hover .h3-div1 {
+    color: white;
+}
+
+.our-team .divs .div1:hover .p-div1 {
+    color: blue;
+}
+
+.our-team .div1 .div1-2 {
+    width: 35px;
+    height: 120px;
+    background-color: rgb(24, 24, 234);
+    margin: auto;
+    float: right;
+    visibility: hidden;
+}
+
+.our-team .div1:hover .div1-2 {
+    visibility: visible;
+}
+
+.our-team .div1 .div1-2 i {
+    display: block;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* ------------------ End Our Team ------------------ */
+
+/* ------------------ Start Recent News ------------------ */
+
+.h2-2 {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 50px;
+}
+
+.p2 {
+    width: 80px;
+    height: 4px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.recent_news {
+    padding-top: 100px;
+    overflow: auto;
+}
+
+
+
+.recent_news .div1 {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    float: left;
+    margin-left: 80px;
+    padding-left: 20px;
+}
+
+.recent_news .div1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(79, 79, 177);
+    opacity: 1;
+    transition: 2s;
+}
+
+.recent_news .div1:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.recent_news .div1 .img-div1 {
+    padding-bottom: 30px;
+}
+
+.recent_news .div1 .p-div1 {
+    color: rgb(163, 157, 157);
+    line-height: 1.7;
+}
+
+.recent_news .div1 .a-div1 {
+    text-decoration: none;
+}
+
+/* ------------------ End Recent News ------------------ */
+
+/* ------------------ Start Footer ------------------ */
+
+.footer {
+    height: 400px;
+    background-color: rgb(54, 52, 52);
+    text-align: center;
+}
+
+.footer .footer-img {
+    width: 300px;
+    margin-top: 60px;
+}
+
+.footer .icons {
+    text-align: center;
+    overflow: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .icons .facebook {
+    margin-left: 580px;
+}
+
+.footer .icons div {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    margin: auto;
+    float: left;
+    margin-right: 8px;
+}
+
+.footer .icons div:hover {
+    opacity: 0.5;
+}
+
+.footer .icons div i {
+    padding-top: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.footer-p span {
+    color: white;
+}
+
+/* ------------------ End Footer ------------------ */
